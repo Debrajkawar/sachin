@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -67,18 +68,18 @@
         .hero {
             background: url('dk1.jpeg') no-repeat center center/cover;
             width: 100%;
-            height: 400px;
+            height: 700px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: rgb(245, 240, 240);
             font-size: 30px;
             font-weight: bold;
         }
         .content {
-            padding: 20px;
+            padding: 60px;
         }
-        .footer {
+        /*.footer {
             background: rgba(51, 51, 51, 0.8);
             color: white;
             text-align: center;
@@ -86,7 +87,8 @@
             width: 100%;
             position: fixed;
             bottom: 0;
-        }
+            margin-top: auto;
+        }*/
         @media (max-width: 768px) {
             body {
                 background-size: cover;
@@ -95,8 +97,8 @@
                 min-height: required;
             }
             .hero {
-                height: 250px;
-                font-size: 20px;
+                height: 460px;
+                font-size: 40px;
                 padding: 20px;
             }
             .nav-links {
@@ -123,13 +125,9 @@
                 width: 90%;
                 padding: 10px;
             }
-            .footer {
-                position: buttom;
-                padding: 10px;
-            }
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 50px auto;
             background: #fff;
             padding: 20px;
@@ -175,87 +173,178 @@
             font-weight: bold;
             margin: 20px 0;
             color: rgb(16, 14, 14);
-          }
-          
-          .slider-container {
+        }
+        .slider-container {
             position: relative;
             width: 100%;
-            height: 300px;
-            background: white;
-            max-width: 78%;
-            overflow: hidden;
-            margin: 0 auto;
-            margin-bottom: 20px;
-
-          }
-          
-          .slider {
-            display: flex;
-            transition: transform 1s ease;
-          }
-          
-          .slide {
-            min-width: 100%;
-            box-sizing: border-box;
+            max-width: 100%;
+            margin: auto;
             text-align: center;
-            color: rgb(59, 16, 16);
-          }
-          
-          .slide-image {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 0 auto;
-          }
-          
-          .quote {
-            font-size: 1.5rem;
-            margin: 20px 0;
-          }
-          
-          .author {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Slider Styling */
+        .slider {
+            display: flex;
+            width: 100%;
+            transition: transform 0.8s ease-in-out; /* Smooth transition */
+        }
+
+        .slide {
+          min-width: 100%;  /* Each slide takes full width of the container */
+          text-align: center;
+          opacity: 0; /* Make sure the slide is hidden by default */
+          transition: opacity 0.4s ease-in-out; /* Fade-in/out transition */
+      }
+
+      .slide.active {
+          opacity: 1; /* Make the active slide visible */
+      }
+      .slide-image {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin: auto;
+          display: block;
+      }
+
+      .quote {
+          font-size: 18px;
+          font-style: italic;
+          color: #444;
+          margin: 15px 0;
+        }
+
+        .author {
+            font-size: 16px;
             font-weight: bold;
-          }
-          
-          .arrow {
+            color: #666;
+        }
+
+        /* Navigation Arrows */
+        .arrow {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background-color: rgba(11, 3, 3, 0.5);
-            color: rgb(250, 240, 240);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
             border: none;
             cursor: pointer;
             padding: 10px;
-            z-index: 10;
-            display: none;
-          }
-          
-          .arrow.left {
-            left: 10px;
+            font-size: 24px;
+            border-radius: 50%;
+            transition: background-color 0.3s, transform 0.2s;
         }
-      
-        .arrow.right {
-          right: 10px;
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
         }
-        
+        .left {
+          left: 10px;
+        }
+
+        .right {
+            right: 10px;
+        }
+
+        /* Dots Navigation */
         .dots {
-          text-align: center;
-          margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
         }
-        
+
         .dot {
-          display: inline-block;
-          width: 12px;
-          height: 12px;
-          margin: 5px;
-          background-color: rgba(88, 85, 85, 0.5);
-          border-radius: 50%;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
+            height: 12px;
+            width: 12px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
         }
-        
-        .dot.active {
-          background-color: rgb(58, 53, 53);
+
+        .dot.active,
+        .dot:hover {
+            background-color: #555;
+            transform: scale(1.2);
+        }
+        /*css for footer*/
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+        .footer h3 {
+            margin-bottom: 15px;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .contact-btn {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .footer-bottom {
+            margin-top: 20px;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -272,9 +361,9 @@
         </ul>
     </header>
     <div class="dev">
-    <div class="hero">Welcome to My Website<br> Devraj Kunwar</div>
+    <div class="hero"><p>Welcome to My Website<br> Devraj Kunwar</p></div>
 </div>
-    <div class="footer">&copy; 2025 My Website</div>
+    <!-- <div class="footer">&copy; 2025 My Website</div> -->
     <script>
         function toggleMenu() {
             document.querySelector('.nav-links').classList.toggle('active');
@@ -298,108 +387,147 @@
         <div class="social-links">
         <a href="#"><img src="email.png" alt="YouTube"></a>
         <a href="#"><img src="facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="instagram.png" alt="instagram"></a>
+        <a href="#"><img src="Instagram.png" alt="instagram"></a>
         <a href="#"><img src="whatsapp.png" alt="Email"></a>
         </div>
     </div>
-    <div class="slider-container">
-    <h2>Inspiring Quotes</h2>
-    <div class="slider">
-      <div class="slide">
-        <img src="dsb.jpg" alt="Image 1" class="slide-image">
-        <p class="quote">
-          "If you're changing the world, you're working on important things. You're excited to get up in the morning."
-        </p>
-        <p class="author">by Larry Page</p>
+    <section class="slider-container">
+      <h2>Inspiring Quotes</h2>
+      <div class="slider">
+          <div class="slide active">
+              <img src="dsb.jpg" alt="Image 1" class="slide-image">
+              <p class="quote">"If you're changing the world, you're working on important things. You're excited to get up in the morning."</p>
+              <p class="author">by Larry Page</p>
+          </div>
+          <div class="slide">
+              <img src="dk1.jpeg" alt="Image 2" class="slide-image">
+              <p class="quote">"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</p>
+              <p class="author">by Albert Schweitzer</p>
+          </div>
+          <div class="slide">
+              <img src="dsb.jpg" alt="Image 3" class="slide-image">
+              <p class="quote">"Innovation distinguishes between a leader and a follower."</p>
+              <p class="author">by Steve Jobs</p>
+          </div>
       </div>
-      <div class="slide">
-        <img src="dk1.jpeg" alt="Image 2" class="slide-image">
-        <p class="quote">
-          "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."
-        </p>
-        <p class="author">by Albert Schweitzer</p>
+      <!-- Navigation Arrows -->
+      <button class="arrow left" onclick="prevSlide()">&#8249;</button>
+      <button class="arrow right" onclick="nextSlide()">&#8250;</button>
+      <!-- Dots -->
+      <div class="dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
       </div>
-      <div class="slide">
-        <img src="dsb.jpg" alt="Image 3" class="slide-image">
-        <p class="quote">
-          "Innovation distinguishes between a leader and a follower."
-        </p>
-        <p class="author">by Steve Jobs</p>
-      </div>
+    </section>
+  <script>
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        // Adjust the position of the entire slider using translateX
+        const offset = -index * 100; // Calculate the offset for the slider container
+        slider.style.transform = `translateX(${offset}%)`; // Move the entire slider container to show the correct slide
+
+        // Update the active class for slides
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active'); // Remove active from all slides
+            if (i === index) {
+                slide.classList.add('active'); // Add active class to the current slide
+            }
+        });
+
+        // Update the active dot
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index); // Only the current dot should have the "active" class
+        });
+        currentIndex = index;
+        updateArrows(index); // Update arrows visibility based on the index
+    }
+
+    // Function to update arrows visibility
+    function updateArrows(index) {
+        leftArrow.style.display = index === 0 ? 'none' : 'block'; // Hide left arrow on first slide
+        rightArrow.style.display = index === slides.length - 1 ? 'none' : 'block'; // Hide right arrow on last slide
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length; // Cycle through the slides
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Cycle through the slides in reverse
+        showSlide(currentIndex);
+    }
+
+    function goToSlide(index) {
+        showSlide(index); // Jump to the specified slide
+    }
+
+    function startAutoSlide() {
+        slideInterval = setInterval(nextSlide, 3000); // Automatically slide every 3 seconds
+    }
+    function stopAutoSlide() {
+      clearInterval(slideInterval); // Stop auto sliding when hovered
+}
+
+startAutoSlide();
+
+  // Pause auto slide on hover
+document.querySelector('.slider-container').addEventListener('mouseenter', stopAutoSlide);
+document.querySelector('.slider-container').addEventListener('mouseleave', startAutoSlide);
+    </script>
+    <!-- html code for footer -->
+<div class="footer">
+<div class="footer-container">
+    <div class="footer-section">
+        <h3>Colorlib</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quasi perferendis ratione.</p>
     </div>
-    <!-- Navigation Arrows -->
-    <button class="arrow left" onclick="prevSlide()">&#8249;</button>
-    <button class="arrow right" onclick="nextSlide()">&#8250;</button>
-    <!-- Dots -->
-    <div class="dots">
-        <span class="dot" onclick="goToSlide(0)"></span>
-        <span class="dot" onclick="goToSlide(1)"></span>
-        <span class="dot" onclick="goToSlide(2)"></span>
-      </div>
+    <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
-    <script>
-      const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-  const dots = document.querySelectorAll('.dot');
-  const leftArrow = document.querySelector('.arrow.left');
-  const rightArrow = document.querySelector('.arrow.right');
-  let currentIndex = 0;
-  
-  // Function to show a specific slide
-  function showSlide(index) {
-    const offset = -index * 100;
-    slider.style.transform = `translateX(${offset}%)`;
-    updateDots(index);
-    updateArrows(index);
-  }
-  
-  // Function to update active dot
-  function updateDots(index) {
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === index);
-    });
-  }
-  
-  // Function to update arrows visibility
-  function updateArrows(index) {
-    leftArrow.style.display = index === 0 ? 'none' : 'block';
-    rightArrow.style.display = index === slides.length - 1 ? 'none' : 'block';
-  }
-  
-  // Function to move to the next slide
-  function nextSlide() {
-    if (currentIndex < slides.length - 1) {
-      currentIndex++;
-      showSlide(currentIndex);
-  }
-}
-
-// Function to move to the previous slide
-function prevSlide() {
-  if (currentIndex > 0) {
-    currentIndex--;
-    showSlide(currentIndex);
-  }
-}
-
-// Function to go to a specific slide
-function goToSlide(index) {
-  currentIndex = index;
-  showSlide(currentIndex);
-}
-
-// Automatically slide every 3 seconds
-setInterval(() => {
-  if (currentIndex < slides.length - 1) {
-    nextSlide();
-  } else {
-    currentIndex = 0;
-    showSlide(currentIndex);
-  }
-}, 3000);
-// Initialize the first slide and dot
-showSlide(0);
-
-  </script>
+    <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Journal</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Partners</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <a href="#" class="contact-btn">Contact Us</a>
+    </div>
+</div>
+<div class="footer-bottom">
+    <p>&copy; 2019-2020 All Rights Reserved.</p>
+</div>
+</div>
 </body>
 </html>
