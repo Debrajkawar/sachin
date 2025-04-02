@@ -14,21 +14,6 @@
 <h2 align="center">I am a passionate Data Analyst and Computer designer</h2>
 <br/>
 
-<div align="center">
- 
- 🔭 **I build softwares and turn data into Insights**
- 
- 🌱 I’m currently learning **Machine Learning**
-
-💬 Ask me about **Programming, Data Analytics, Python, SQL, C, C++ or anything tech related [here](https://github.com/de-pesh/de-pesh/issues)**
-
-⚡ Actively seeking opportunities for a Data Analyst or a Software Engineer role. Please feel free to reach out.
-
-📃 My CV : [Link](https://drive.google.com/file/d/1ejyWTlz_2Uf-8w2_7JgkSaGOwxoCzEXMJScbimSifEU/view?usp=sharing)
-
- </div>
-
-</div>
  
 <hr/>
  
@@ -46,32 +31,10 @@
   <a href="https://www.deepesh-bhandari.com.np" target="_blank">
      <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" target="_blank" /> 
   </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.youtube.com/@de-pesh" target="_blank">
-     <img src="https://img.shields.io/badge/Youtube-d90000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank" /> 
-  </a>
 </div>
 
 <hr/>
- 
-<h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
-<br/>
-<div align="center">
-    <img src="https://skillicons.dev/icons?i=aws,arduino,bash,html,css,vscode,github,git,figma,linux" /><br>
-    <img src="https://skillicons.dev/icons?i=javascript,python,c,cpp,java,mysql,flask,tensorflow,pytorch" /><br><br>
-</div>
-    
-<hr/>
-
-<h2 align="center">⚡ My Stats ⚡</h2>
-<br>
-<div align=center>
-  <img width=410 src="https://github-readme-streak-stats-salesp07.vercel.app/?user=de-pesh&count_private=true&theme=react&border_radius=10" alt="streak stats"/>
-  <img width=390 src="https://github-readme-stats-salesp07.vercel.app/api?username=de-pesh&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats" />
-  <br/>
-  <img width=325 align="center" src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=de-pesh&hide=HTML&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="top langs" />
-</div>
-
-<br/><br/>
-
-<hr/>
+  <img
+    alt="github contribution grid snake animation"
+    src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
+  />
