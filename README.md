@@ -16,25 +16,18 @@
 
  
 <hr/>
- 
-<h2 align="center">🔗Connect with Me🔗</h2>
-<br/>
-<div align="center"> 
-  <a href="mailto:dk1153672@gmail.com">
-    <img src="https://www.facebook.com/profile.php?id=100080982746323" /> 
-  </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://linkedin.com/in/de-pesh" target="_blank">
-    <img src="" target="_blank" /> 
-  </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="" target="_blank">
-     <img src="" target="_blank" /> 
-  </a>
-</div>
+## 🎯 **Let’s Explore **
 
-<hr/>
-  <img
-    alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
+Feel free to reach out for **freelance projects**, **collaborations**, or just to chat about design and development! Let’s make something amazing together. 💥
+
+- 📧 **Email**: info@dk1153672@gmail.com
+- **facebook**: 
+
+
+---
+
+<br>
+<h3 align ="center">
+🎉 Thank You for Checking Out the Project!
+If you enjoy this project, feel free to ⭐️ it and share it with others!
+</h3>
