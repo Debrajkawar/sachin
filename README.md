@@ -11,7 +11,7 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=3000&lines=Hi+There!+👋;+I'm+Devraj!;" />
 </h1>
  
-<h2 align="center">I am a passionate Data Analyst and Computer designer</h2>
+<h2 align="center">I am a passionate Deb developer and Designer</h2>
 <br/>
 
  
@@ -21,7 +21,7 @@
 <br/>
 <div align="center"> 
   <a href="mailto:dk1153672@gmail.com">
-    <img src="" /> 
+    <img src="https://www.facebook.com/profile.php?id=100080982746323" /> 
   </a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://linkedin.com/in/de-pesh" target="_blank">
