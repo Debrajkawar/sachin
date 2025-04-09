@@ -36,9 +36,6 @@
 Feel free to reach out for **freelance projects**, **collaborations**, or just to chat about design and development! Let’s make something amazing together. 💥
 
 - 📧 **Email**: info@dk1153672@gmail.com
-- **facebook**: 
-
-
 ---
 
 <br>
